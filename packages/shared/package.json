@@ -13,7 +13,10 @@
   ],
   "scripts": {},
   "dependencies": {
-    "@babel/runtime": "^7.5.5",
     "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.5.5",
+    "@types/react-native": "^0.60.2"
   }
 }
