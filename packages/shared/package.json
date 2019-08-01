@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Shared code base for all platform",
   "author": "Fachri Hawari <fachri.hawari@gmail.com>",
-  "main": "src/index.js",
+  "main": "src/index.tsx",
   "directories": {
     "src": "src",
     "test": "__tests__"
@@ -11,7 +11,9 @@
   "files": [
     "src"
   ],
-  "scripts": {
-    
+  "scripts": {},
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "react": "^16.8.6"
   }
 }

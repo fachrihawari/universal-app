@@ -8,6 +8,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@app/shared": "^0.0.1",
     "react": "16.8.6",
     "react-native": "0.60.4"
   },
