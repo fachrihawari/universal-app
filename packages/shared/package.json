@@ -1,0 +1,17 @@
+{
+  "name": "@app/shared",
+  "version": "0.0.1",
+  "description": "Shared code base for all platform",
+  "author": "Fachri Hawari <fachri.hawari@gmail.com>",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    
+  }
+}
