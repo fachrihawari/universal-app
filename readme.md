@@ -1,6 +1,6 @@
 # Universal App
 
-This is a boilerplace for developing app for android, ios, and web.
+This is a boilerplace for developing app for android, ios, web and desktop.
 
 ## Tech stack
 
@@ -9,6 +9,7 @@ This is a boilerplace for developing app for android, ios, and web.
 - React
 - React Native
 - React Native Web
+- Electron
 
 ## How to use
 
@@ -57,10 +58,15 @@ This is a boilerplace for developing app for android, ios, and web.
   ```
 
 - Run the app
-  ```bash
-  react-native run-android
-  ```
-  or
-  ```bash
-  react-native run-ios
-  ```
+    - Android
+    ```bash
+    react-native run-android
+    ```
+    - iOS
+    ```bash
+    react-native run-ios
+    ```
+   - Web and Desktop
+   ``` 
+   Already running with packager
+   ```
