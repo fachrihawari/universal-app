@@ -1,6 +1,6 @@
 import { app, BrowserWindow } from "electron";
 import * as path from 'path'
-import * as isDev from 'electron-is-dev';
+import { __DEV__ } from './libs/electron-is-dev';
 
 let mainWindow: Electron.BrowserWindow;
 
@@ -8,16 +8,19 @@ function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     height: 600,
-    width: 800
+    width: 800,
+    webPreferences: {
+      devTools: __DEV__
+    }
   });
 
   // and load the index.html of the app.
-  const url = isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`
+  const url = __DEV__ ? 'http://localhost:3000' : `file://${path.join(__dirname, '../www/index.html')}`
   mainWindow.loadURL(url);
 
   // Open the DevTools.
-  mainWindow.webContents.closeDevTools();
-
+  mainWindow.webContents.openDevTools();
+  
   // Emitted when the window is closed.
   mainWindow.on("closed", () => {
     // Dereference the window object, usually you would store windows
