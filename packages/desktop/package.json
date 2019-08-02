@@ -1,0 +1,18 @@
+{
+  "name": "@app/desktop",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "yarn build && electron ./dist/main.js",
+    "watch": "tsc -w",
+    "build": "yarn build:post && tsc && yarn build:post",
+    "build:post": "cp -R ../web/build ./",
+    "build:pre": "lerna run build --scope @app/web",
+    "lint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "devDependencies": {
+    "electron": "^2.0.2",
+    "electron-is-dev": "^1.1.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}

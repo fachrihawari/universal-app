@@ -2,6 +2,7 @@
   "name": "@app/web",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@app/shared": "^0.0.1",
     "@types/jest": "24.0.16",
