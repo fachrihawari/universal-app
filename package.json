@@ -3,5 +3,10 @@
   "private": true,
   "devDependencies": {
     "lerna": "^3.16.4"
+  },
+  "scripts": {
+    "run-web": "lerna run start --scope @app/web",
+    "run-mobile": "lerna run start --scope @app/mobile",
+    "run-desktop": "lerna run start --scope @app/desktop"
   }
 }
