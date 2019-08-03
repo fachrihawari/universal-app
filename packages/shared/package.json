@@ -13,10 +13,14 @@
   ],
   "scripts": {},
   "dependencies": {
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-router-native": "^5.0.1"
   },
   "devDependencies": {
     "@babel/runtime": "^7.5.5",
-    "@types/react-native": "^0.60.2"
+    "@types/react-native": "^0.60.2",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/react-router-native": "^4.2.4"
   }
 }
