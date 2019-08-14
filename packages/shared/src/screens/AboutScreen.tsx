@@ -1,17 +1,23 @@
 import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import { RouteComponentProps } from "react-router";
+import { NavigationScreenProp, NavigationAction } from "react-navigation";
 
 
-interface IProps extends RouteComponentProps {}
+interface IProps {
+  navigation: NavigationScreenProp<NavigationAction>
+}
 
 function AboutScreen(props: IProps) {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>About Screen!</Text>
-      <Button title="Back to Home" onPress={() => props.history.push("/")} />
+      <Button title="Back to Home" onPress={() => props.navigation.navigate("Home")} />
     </View>
   );
+}
+
+AboutScreen.navigationOptions = {
+  title: 'About'
 }
 
 const styles = StyleSheet.create({

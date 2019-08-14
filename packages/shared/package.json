@@ -13,14 +13,14 @@
   ],
   "scripts": {},
   "dependencies": {
-    "react-router-dom": "^5.0.1",
-    "react-router-native": "^5.0.1"
+    "@react-navigation/core": "^3.4.2",
+    "@react-navigation/web": "^1.0.0-alpha.9",
+    "react-navigation-stack-web": "^0.0.1"
   },
   "devDependencies": {
     "@babel/runtime": "^7.5.5",
     "@types/react": "^16.8.24",
     "@types/react-native": "^0.60.2",
-    "@types/react-router-dom": "^4.3.4",
-    "@types/react-router-native": "^4.2.4"
+    "@types/react-navigation": "^3.0.8"
   }
 }

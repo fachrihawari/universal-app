@@ -1,9 +1,10 @@
 import React from "react";
 import { Platform, StyleSheet, Text, View, Button } from "react-native";
-import { RouteComponentProps } from "react-router";
+import { NavigationScreenProp, NavigationAction } from "react-navigation";
 
-
-interface IProps extends RouteComponentProps {}
+interface IProps  {
+  navigation: NavigationScreenProp<NavigationAction>
+}
 
 function HomeScreen(props: IProps) {
 
@@ -22,10 +23,14 @@ function HomeScreen(props: IProps) {
         To get started, edit packages/shared/src/index.tsx
       </Text>
       <Text style={styles.instructions}>{instructions}</Text>
-      <Button title="Go to About" onPress={() => props.history.push("/about")} />
+      <Button title="Go to About" onPress={() => props.navigation.navigate("About")} />
     </View>
   );
 }
+
+HomeScreen.navigationOptions = {
+  title: 'Welcome'
+};
 
 const styles = StyleSheet.create({
   container: {

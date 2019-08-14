@@ -23,6 +23,9 @@ module.exports = {
 			react: path.resolve(__dirname, 'node_modules/react'),
 			'react-native': path.resolve(__dirname, 'node_modules/react-native'),
 			'@babel/runtime': path.resolve(__dirname, 'node_modules/@babel/runtime'),
+			'@react-navigation/native': path.resolve(__dirname, 'node_modules/@react-navigation/native'),
+			'react-navigation': path.resolve(__dirname, 'node_modules/react-navigation'),
+			'react-native-gesture-handler': path.resolve(__dirname, 'node_modules/react-native-gesture-handler'),
 		},
 	}
 };
