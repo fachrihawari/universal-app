@@ -4,7 +4,6 @@ This is a boilerplace for developing app for android, ios, web and desktop.
 
 ## Tech stack
 
-- Lerna
 - Typescript
 - React
 - React Native
@@ -12,18 +11,6 @@ This is a boilerplace for developing app for android, ios, web and desktop.
 - Electron
 
 ## How to use
-
-- Install lerna
-
-  ```bash
-  yarn global add lerna
-  ```
-
-  or
-
-  ```bash
-  npm install -g lerna
-  ```
 
 - Clone project
 
@@ -40,7 +27,7 @@ This is a boilerplace for developing app for android, ios, web and desktop.
 - Install depedencies
 
   ```bash
-  lerna bootstrap
+  yarn bootstrap
   ```
 
 - ANDROID only, copy your debug.keystore to android/app/debug.keystore
@@ -51,22 +38,22 @@ This is a boilerplace for developing app for android, ios, web and desktop.
   cd ios && pod install
   ```
 
-- Run packager
-
-  ```bash
-  lerna run start
-  ```
-
 - Run the app
     - Android
     ```bash
+    cd packages/mobile
     react-native run-android
     ```
     - iOS
     ```bash
+    cd packages/mobile
     react-native run-ios
     ```
-   - Web and Desktop
-   ``` 
-   Already running with packager
-   ```
+   - Web
+    ```bash
+    yarn run-web
+    ```
+   - Desktop
+    ```bash
+    yarn run-desktop
+    ```

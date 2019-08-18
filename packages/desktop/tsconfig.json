@@ -5,6 +5,7 @@
     "sourceMap": true,
     "outDir": "app",
     "baseUrl": ".",
+    "types": [],
     "paths": {
       "*": ["node_modules/*"]
     }

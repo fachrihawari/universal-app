@@ -1,14 +1,16 @@
 {
   "name": "@app/desktop",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "concurrently \"tsc\" \"lerna run start --scope @app/web\" \"electron ./app/main.js\"",
+    "start": "concurrently \"tsc\" \"yarn workspace @app/web start\" \"electron ./app/main.js\"",
     "watch": "tsc -w",
-    "build": "yarn build:pre && tsc && yarn build:post",
-    "build:post": "cp -R ../web/build/ ./www",
-    "build:pre": "lerna run build --scope @app/web",
+    "prebuild": "yarn workspace @app/web build",
+    "build": "tsc",
+    "postbuild": "cp -R ../web/build/ ./www",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "pack": "yarn build && electron-builder --dir",
+    "predist": "yarn build",
     "dist": "electron-builder"
   },
   "main": "./app/main.js",
@@ -18,6 +20,12 @@
     "electron-builder": "^21.2.0",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
+  },
+  "workspaces": {
+    "nohoist": [
+      "electron", "electron/**",
+      "electron-builder", "electron-builder/**"
+    ]
   },
   "build": {
     "appId": "id.hawari.universalapp",

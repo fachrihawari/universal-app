@@ -1,6 +1,7 @@
 {
   "name": "@app/shared",
   "version": "0.0.1",
+  "private": true,
   "description": "Shared code base for all platform",
   "author": "Fachri Hawari <fachri.hawari@gmail.com>",
   "main": "src/index.tsx",

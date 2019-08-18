@@ -5,11 +5,13 @@
     "lerna": "^3.16.4"
   },
   "scripts": {
-    "clean": "lerna clean -y",
-    "bootstrap": "lerna bootstrap",
-    "reset": "yarn clean && yarn bootstrap",
-    "run-web": "lerna run start --scope @app/web",
-    "run-mobile": "lerna run start --scope @app/mobile",
-    "run-desktop": "lerna run start --scope @app/desktop"
-  }
+    "clean": "rm -rf node_modules packaages/**/node_modules",
+    "bootstrap": "yarn clean && yarn install",
+    "run-web": "yarn workspace @app/web start",
+    "run-mobile": "yarn workspace @app/mobile start",
+    "run-desktop": "yarn workspace @app/desktop start"
+  },
+  "workspaces": [
+    "packages/**"
+  ]
 }
