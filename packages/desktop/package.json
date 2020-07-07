@@ -16,7 +16,7 @@
   "main": "./app/main.js",
   "devDependencies": {
     "concurrently": "^4.1.1",
-    "electron": "^6.0.0",
+    "electron": "^7.2.4",
     "electron-builder": "^21.2.0",
     "tslint": "^5.18.0",
     "typescript": "^3.5.3"
