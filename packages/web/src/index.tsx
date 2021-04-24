@@ -2,7 +2,7 @@ import "./index.css";
 
 import { AppRegistry } from "react-native";
 import App from "@app/shared";
-import * as serviceWorker from "./serviceWorker";
+import * as serviceWorker from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 
 AppRegistry.registerComponent("mobile", () => App);
