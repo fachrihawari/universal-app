@@ -11,7 +11,7 @@ module.exports = {
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
-        inlineRequires: false,
+        inlineRequires: true,
       },
     }),
   },
@@ -20,7 +20,7 @@ module.exports = {
   ],
 	resolver: {
 		extraNodeModules: {
-			'react-navigation': path.resolve(__dirname, 'node_modules/react-navigation')
+			'react-native': path.resolve(__dirname, 'node_modules/react-native')
 		},
 	}
 };
