@@ -1,13 +1,8 @@
-
-html,
-body,
-#root,
-#root > div {
-  width: 100%;
-  height: 100%;
-}
-
-body {
+/* These styles make the body full-height */
+html, body { height: 100%; }
+/* These styles disable body scrolling if you are using <ScrollView> */
+body { 
+  overflow: hidden; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
@@ -18,3 +13,5 @@ body {
   user-select: none;
   -webkit-app-region: drag;
 }
+/* These styles make the root element full-height */
+#root { display:flex; height:100%; }

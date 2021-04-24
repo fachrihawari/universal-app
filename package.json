@@ -1,15 +1,12 @@
 {
   "name": "root",
   "private": true,
-  "devDependencies": {
-    "lerna": "^3.16.4"
-  },
   "scripts": {
-    "clean": "rm -rf node_modules packaages/**/node_modules",
+    "clean": "rm -rf node_modules packages/**/node_modules",
     "bootstrap": "yarn clean && yarn install",
-    "run-web": "yarn workspace @app/web start",
-    "run-mobile": "yarn workspace @app/mobile start",
-    "run-desktop": "yarn workspace @app/desktop start"
+    "web": "yarn workspace @app/web start",
+    "mobile": "yarn workspace @app/mobile start",
+    "desktop": "yarn workspace @app/desktop start"
   },
   "workspaces": [
     "packages/**"
