@@ -2,6 +2,12 @@
 
 This is a boilerplace for developing app for android, ios, web and desktop.
 
+
+## :exclamation::exclamation::exclamation: Repo Status :exclamation::exclamation::exclamation:
+
+This repo will be archived, and I create the similar thing on the new repo [here](https://github.com/fachrihawari/react-universal-template)
+
+
 ## Tech stack
 
 - Typescript
